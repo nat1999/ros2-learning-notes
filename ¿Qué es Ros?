@@ -1,0 +1,19 @@
+🤖 ¿Qué es ROS 2?
+📌 Definición de ROS 2
+
+ROS 2 (Robot Operating System 2) es un conjunto de bibliotecas, herramientas y marcos de trabajo diseñados para el desarrollo de aplicaciones robóticas.
+
+A diferencia de un sistema operativo tradicional, ROS 2 funciona como un middleware, facilitando la comunicación entre los diferentes componentes (nodos) de un sistema robótico.
+
+ROS 2 utiliza un middleware llamado DDS (Data Distribution Service), que permite la transmisión eficiente de datos entre nodos, proporcionando comunicación en tiempo real, mayor confiabilidad y escalabilidad.
+
+🔄 Diferencias entre ROS 1 y ROS 2
+🏗️ Arquitectura
+ROS 1: Utiliza una arquitectura centralizada basada en un nodo maestro (ROS Master), encargado de gestionar la comunicación entre los nodos.
+ROS 2: Emplea una arquitectura distribuida basada en grafos de nodos, donde la comunicación se realiza mediante DDS, eliminando la dependencia de un nodo maestro.
+💻 Soporte de plataformas
+ROS 2: Es multiplataforma, compatible con Linux, Windows y macOS.
+ROS 1: Funciona principalmente en sistemas Linux.
+🧑‍💻 Lenguajes de programación
+ROS 1: Soporta principalmente C++ y Python.
+ROS 2: Amplía el soporte a otros lenguajes como Java y Rust, además de mantener compatibilidad con C++ y Python.
