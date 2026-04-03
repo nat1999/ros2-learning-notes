@@ -10,9 +10,7 @@ source /opt/ros/humble/setup.bash
 
 Si tienes otra distribución de ROS 2 como Iron o Jazzy, cambia humble por la que corresponda.
 
-Para no hacerlo cada vez
-
-Puedes agregarlo al archivo ~/.bashrc:
+Para no hacerlo cada vez, puedes agregarlo al archivo ~/.bashrc:
 
 ```bash
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
@@ -65,7 +63,18 @@ mkdir -p ~/ros2_ws/src
 
 Nota: Los paquetes siempre se compilan desde la raíz del espacio de trabajo (ros2_ws), no desde la carpeta src.
 
-### 4. Instalar colcon (si no está disponible)
+
+### 4. Cargar el workspace creado
+
+Después de compilar, debes cargar el entorno del workspace:
+
+```bash
+source install/setup.bash
+```
+Este paso es muy importante, porque sin eso ROS 2 no reconoce los paquetes de tu workspace.
+
+
+### 5. Instalar colcon (si no está disponible)
 
 Si el comando colcon build no funciona, es necesario instalarlo:
 
@@ -74,11 +83,3 @@ sudo apt update
 sudo apt install python3-colcon-common-extensions
 ```
 
-### 5. Cargar el workspace creado
-
-Después de compilar, debes cargar el entorno del workspace:
-
-```bash
-source install/setup.bash
-```
-Este paso es muy importante, porque sin eso ROS 2 no reconoce los paquetes de tu workspace
