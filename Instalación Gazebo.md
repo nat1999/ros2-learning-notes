@@ -1,4 +1,4 @@
-#🤖 Instalación de Gazebo en ROS 2
+# 🤖 Instalación de Gazebo en ROS 2
 
 Para instalar la integración de Gazebo con Ros2 Humble:
 
