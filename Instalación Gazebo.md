@@ -19,7 +19,7 @@ Copyright (C) 2012 Open Source Robotics Foundation.
 Released under the Apache 2 License.
 http://gazebosim.org
 ```
-# 🔣 Abrir el aplicativo de Gazebo
+# 💻  Abrir el aplicativo de Gazebo
 
 Abrir una terminal y poner el siguiente comando:
 
@@ -34,6 +34,6 @@ gzclient
 ```
 Este comando abre la interfaz gráfica de Gazebo, permitiendo visualizar e interactuar con la simulación.
 
-### Entorno de Gazebo 
+# 🧑‍💻 Entorno de Gazebo 
 <img width="1129" height="583" alt="image" src="https://github.com/user-attachments/assets/8a09e3ba-eecf-48d3-be1f-c8258083c420" />
 
