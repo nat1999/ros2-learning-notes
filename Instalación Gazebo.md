@@ -26,7 +26,7 @@ Abrir una terminal y poner el siguiente comando:
 ```bash
 ros2 launch gazebo_ros gzserver.launch.py
 ```
-Este comando inicia el servidor de Gazebo, encargado de ejecutar la simulación, procesar la física del entorno y gestionar el comportamiento de los objetos y robots.
+Este comando inicia la parte interna de Gazebo, donde se cargan el robot, el entorno virtual, la física del simulador y las configuraciones necesarias para el funcionamiento de la simulación
 
 Abrir una segunda terminal y colocar el comando:
 ```bash
