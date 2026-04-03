@@ -15,5 +15,7 @@ Este repositorio contiene mis notas y aprendizaje sobre ROS2, incluyendo concept
 Documentar mi proceso de aprendizaje en robótica utilizando ROS2.
 
 ## 📚 Menú
-- [¿Qué es ROS?](./¿Qué%20es%20Ros%3F.md)
+- [¿Qué es ROS2?](./¿Qué%20es%20Ros%3F.md)
 - [Espacio de trabajo en ROS 2](./Espacio%20de%20trabajo%20en%20Ros.md)
+- [Instalación del entorno de Gazebo en ROS2](./Instalaci%C3%B3n%20Gazebo.md)
+  
