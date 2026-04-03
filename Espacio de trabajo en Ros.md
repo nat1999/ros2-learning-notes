@@ -34,7 +34,7 @@ Salida esperada:
 build  install  log  src
 ```
 
-En conclusión así serían los pasos a seguir:
+En conclusión, así serían los pasos a seguir:
 
 ```bash
 mkdir -p ~/ros2_ws/src
