@@ -44,5 +44,5 @@ mkdir -p ~/ros2_ws/src
 > build install log src
 ```
 
-
+Nota: Los paquetes siempre se compilan desde la raíz del espacio de trabajo (ros2_ws), no desde la carpeta src.
 
