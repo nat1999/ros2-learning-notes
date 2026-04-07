@@ -7,11 +7,11 @@ Es el “cerebro de navegación” que le dice al robot cómo ir de un punto A a
 
 La pila de navegación permite que el robot:
 
--📍 Sepa dónde está (localización)
--🗺️ Entienda el entorno (mapa)
--🚧 Detecte obstáculos
--🧠 Planifique rutas
--🚗 Se mueva solo hacia un objetivo
+- '📍 Sepa dónde está (localización)'
+- '🗺️ Entienda el entorno (mapa)'
+- '🚧 Detecte obstáculos'
+- '🧠 Planifique rutas'
+- '🚗 Se mueva solo hacia un objetivo'
 
 Nav2 incluye paquetes como:
 
