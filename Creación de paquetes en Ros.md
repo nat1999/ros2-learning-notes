@@ -1,4 +1,4 @@
-# 🤖 Creación de un espacio de trabajo en ROS 2
+# 🤖 Creación de paquetes en Ros2
 
 ### 1. Compilación de paquetes 
 Para la compilación de paquetes se utiliza la instrucción **colcon build** y **colcon build --symlink-install**. La instrucción colcon admite dos opciones de construcción de paquetes: ament_cmake y ament_python. 
