@@ -15,6 +15,7 @@ Ambas instrucciones se encargan de compilar paquetes.
 ```bash
 ros2 pkg create  <package_name> --build-type <build_type> <dependencies>
 ```
+
 -  `<package_name>:` Es el nombre que se le asigna al paquete.
 -  `<build_type>:`Es el tipo de construcción que se desea utilizar y se puede elegir dos opciones: ament_cmake y ament_python.
 -  `<dependencies>:` Son las dependencias de un paquete. Las dependencias son mensajes, librerías y funciones. 
@@ -24,5 +25,19 @@ ros2 pkg create  <package_name> --build-type <build_type> <dependencies>
 ```bash
 cd ~/ros2_ws/src$
 ~/ros2_ws/src$  ros2 pkg create robot_study --build-type ament_cmake --dependencies std_msgs rclcpp geometry_msgs
+```
+
+Para visualizar la creación del paquete, se realiza lo que se muestra a continuación:
+
 ```bash
+~/robot_study$ ls
+> CMakeLists.txt include package_xml src
+```
+
+Se compila el paquete creado con la siguiente instrucción:
+~/ros2_ws$  colcon build
+Finalmente, para que los nodos puedan correr sin ningún inconveniente desde la terminal de linux, es importante poner la siguiente instrucción:
+source install/local_setup.bash
+Este comando permite obtener el código fuente del área de trabajo. 
+
 
