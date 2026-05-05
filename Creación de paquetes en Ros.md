@@ -15,6 +15,6 @@ Ambas instrucciones se encargan de compilar paquetes.
 ```bash
 ros2 pkg create  <package_name> --build-type <build_type> <dependencies>
 ```
-- `<build_type>:`Es el tipo de construcción que se desea utilizar y se puede elegir dos opciones: ament_cmake y ament_python.
 -  `<package_name>:` Es el nombre que se le asigna al paquete.
+-  `<build_type>:`Es el tipo de construcción que se desea utilizar y se puede elegir dos opciones: ament_cmake y ament_python.
 -  `<dependencies>:` Son las dependencias de un paquete. Las dependencias son mensajes, librerías y funciones. 
