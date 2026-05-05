@@ -27,6 +27,8 @@ cd ~/ros2_ws/src$
 ~/ros2_ws/src$  ros2 pkg create robot_study --build-type ament_cmake --dependencies std_msgs rclcpp geometry_msgs
 ```
 
+### 5. Visualización del paquete 
+
 Para visualizar la creación del paquete, se realiza lo que se muestra a continuación:
 
 ```bash
@@ -35,9 +37,14 @@ Para visualizar la creación del paquete, se realiza lo que se muestra a continu
 ```
 
 Se compila el paquete creado con la siguiente instrucción:
+```bash
 ~/ros2_ws$  colcon build
+```
+
 Finalmente, para que los nodos puedan correr sin ningún inconveniente desde la terminal de linux, es importante poner la siguiente instrucción:
+```bash
 source install/local_setup.bash
+```
 Este comando permite obtener el código fuente del área de trabajo. 
 
 
