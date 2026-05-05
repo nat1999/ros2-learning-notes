@@ -47,4 +47,14 @@ source install/local_setup.bash
 ```
 Este comando permite obtener el código fuente del área de trabajo. 
 
+# 📖 Cómo se compone un paquete 
 
+-CMakeLists.txt: El archivo se utiliza para configurar y compilar el paquete.
+
+-package.xml: Es un archivo que contiene información sobre el paquete como el nombre del paquete, dependencias, versiones, descripciones y licencias. 
+
+-src: Es el directorio que contiene el código fuente. 
+
+-include/<package_name>: Es una carpeta utilizada cuando el paquete contiene librerías y módulos, que deben ser usados por otros paquetes.
+
+-La estructura de la carpeta include:  Nombre del paquete <package_name> y los archivos encabezados del paquete <header1.h, header2.h>. Los encabezados hacen referencias a archivos como clases, funciones, variables y estructuras. 
