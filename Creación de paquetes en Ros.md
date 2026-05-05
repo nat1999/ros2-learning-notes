@@ -7,7 +7,7 @@ Para la compilación de paquetes se utiliza la instrucción **colcon build** y *
 
 ### 2. Diferencia entre colcon build y colcon build --symlink instal
 Ambas instrucciones se encargan de compilar paquetes. 
-- colcon build: Comparte los archivos compilados a la carpeta install y esto ocasiona que se ocupe espacio adicional en el disco. 
+- `<colcon build:>` Comparte los archivos compilados a la carpeta install y esto ocasiona que se ocupe espacio adicional en el disco. 
 - colcon build --symlink-install: Utiliza enlaces símbolicos(contiene la ruta y ubicación del archivo) para compartir los archivos compilados en las carpetas install y build, lo que ahorra espacio en el disco.
 
 ### 3. Construcción de paquetes 
