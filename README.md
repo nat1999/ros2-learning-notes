@@ -19,4 +19,4 @@ Documentar mi proceso de aprendizaje en robótica utilizando ROS2.
 - [Espacio de trabajo en ROS 2](./Espacio%20de%20trabajo%20en%20Ros.md)
 - [Instalación del entorno de Gazebo en ROS2](./Instalaci%C3%B3n%20Gazebo.md)
 - [Creación de paquetes en ROS 2](./Creación%20de%20paquetes%20en%20Ros.md)
-  
+- [Canales de comunicación en ROS 2](./Canales%20de%20comunicación%20en%20Ros.md)
