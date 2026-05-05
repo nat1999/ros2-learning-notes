@@ -1,7 +1,7 @@
 # 🤖 Creación de paquetes en Ros2
 
 ### 1. Compilación de paquetes 
-Para la compilación de paquetes se utiliza la instrucción **colcon build** y **colcon build --symlink-install**. La instrucción colcon admite dos opciones de construcción de paquetes: ament_cmake y ament_python. 
+Para la compilación de paquetes se utiliza la instrucción **colcon build** y **colcon build --symlink-install**. La instrucción colcon admite dos opciones de construcción de paquetes: **ament_cmake** y **ament_python**. 
 - `<ament_cmake>:` Se utiliza para construir paquetes escritos en c++.
 - `<ament_python:>:` Se utiliza para construir paquetes escritos en Python.
 
@@ -57,7 +57,7 @@ Este comando permite obtener el código fuente del área de trabajo.
   
 - `<include/<package_name>:` Es una carpeta utilizada cuando el paquete contiene librerías y módulos, que deben ser usados por otros paquetes.
 
-- La estructura de la carpeta include:  Nombre del paquete <package_name> y los archivos encabezados del paquete <header1.h, header2.h>. Los encabezados hacen referencias a archivos como clases, funciones, variables y estructuras.
+- La estructura de la carpeta include:  Nombre del paquete **<package_name>** y los archivos encabezados del paquete **<header1.h**, **header2.h>**. Los encabezados hacen referencias a archivos como clases, funciones, variables y estructuras.
 
 ```bash
 |-- include/
