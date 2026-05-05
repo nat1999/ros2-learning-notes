@@ -1,4 +1,5 @@
-Canales de comunicación entre nodos en ROS 2
+# 🦾Canales de comunicación entre nodos en ROS 2
+
 Nodos
 
 Definición:
