@@ -8,7 +8,7 @@ Los mensajes, son estructura de datos que son utilizados para el intercambio de 
 ## Ejemplo:
 ros2 interface show geometry_msgs/msg/Twist
 ​
-´´´bash
+```bash
 >  Vector3  linear
 	float64 x
 	float64 y
@@ -17,8 +17,7 @@ ros2 interface show geometry_msgs/msg/Twist
 	float64 x
 	float64 y
 	float64 z
-​´´´
-
+```
 ### Mensajes más utilizados 
 std_msgs/String: El mensaje se utiliza para transmitir información en forma de texto o cadena de texto. 
 sensor_msgs/LaserScan: Representa los datos de escaneo láser. Contiene información sobre las mediciones de distancia y la intensidad de los puntos obtenidos por un escáner láser.
