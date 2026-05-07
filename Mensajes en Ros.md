@@ -6,9 +6,8 @@ Los mensajes, son estructura de datos que son utilizados para el intercambio de 
 - `<ros2 interface show <package>/<type>>:`Para examinar la estructura de un mensaje. Permite conocer los campos y tipos de datos que contiene. 
 
 ## Ejemplo:
-​
-```bash
 
+```bash
 ros2 interface show geometry_msgs/msg/Twist
 
 >  Vector3  linear
