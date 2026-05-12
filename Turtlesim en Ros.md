@@ -32,7 +32,7 @@ Para ejecutar el nodo turtlesim_node que se encuentra en el paquete turtlesim, s
 ```bash
 ros2 run turtlesim turtlesim_node 
 ```
-El nodo turtlesim_node muestra una ventana de simulación del robot tortuga.
+El nodo **turtlesim_node** muestra una ventana de simulación del robot tortuga.
 
 <p align="center">
   <img width="407" height="431" alt="image" src="https://github.com/user-attachments/assets/68d04ae4-ff61-4850-9ba4-552346262e0b" />
@@ -45,20 +45,20 @@ Para controlar el movimiento del robot tortuga se ejecuta la instrucción:
 ros2 run turtlesim turtle_teleop_key 
 ```
 
-El nodo turtle_teleop_key, permite controlar el movimiento de la tortuga mediante el uso de las teclas del teclado.
+El nodo **turtle_teleop_key**, permite controlar el movimiento de la tortuga mediante el uso de las teclas del teclado.
 
 <p align="center">
    <img width="408" height="442" alt="image" src="https://github.com/user-attachments/assets/392ae704-a852-409c-8224-463c64d7025e" />
 </p>
 
 
-Para visualizar comandos de velocidad lineal y angular se utiliza la siguiente instrucción:
+Para visualizar comandos de **velocidad lineal** y **angular** se utiliza la siguiente instrucción:
 
 ```bash
 ros2 topic echo <topic_name>
 ```
 
-El tópico asociado es /turtle1/cmd_vel
+El tópico asociado es **/turtle1/cmd_vel**
 
 ```bash
 ros2 topic echo /turtle1/cmd_vel
