@@ -1,6 +1,6 @@
 # 🐢 Turtlesim en Ros2
 
-# Paquete Turtlesim
+### Paquete Turtlesim
 El paquete Turtlesim, es una herramienta que presenta una simulación gráfica en un entorno virtual, con el objetivo de poder simular el movimiento y el comportamiento del robot tortuga. 
 
 Para instalar el paquete turtlesim se utiliza el siguiente comando:
@@ -25,7 +25,7 @@ Para ejecutar nodos en Ros2
 ros2 run [Paquete] [Nodo]
 ```
 
-# Ejemplo
+### Ejemplo
 
 Para ejecutar el nodo turtlesim_node que se encuentra en el paquete turtlesim, se usa el siguiente comando:
 
