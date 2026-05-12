@@ -5,7 +5,7 @@
 Definición:
 Los nodos son programas que se ejecutan como procesos independientes dentro de un sistema robótico. Cada nodo se encarga de una tarea específica y se comunica con otros nodos para cumplir el comportamiento global del sistema.
 
-# Comunicación entre nodos
+# 📩 Comunicación entre nodos
 
 ### 1. Tópicos (Topics)
 
