@@ -38,6 +38,12 @@ El nodo turtlesim_node muestra una ventana de simulación del robot tortuga.
 
 Para controlar el movimiento del robot tortuga se ejecuta la instrucción: 
 
+```bash
+ros2 run turtlesim turtle_teleop_key 
+```
+
+El nodo turtle_teleop_key, permite controlar el movimiento de la tortuga mediante el uso de las teclas del teclado.
+
 <img width="408" height="442" alt="image" src="https://github.com/user-attachments/assets/392ae704-a852-409c-8224-463c64d7025e" />
 
 Para visualizar comandos de velocidad lineal y angular se utiliza la siguiente instrucción:
@@ -88,6 +94,8 @@ angular:
   z: 0.0
 ---
 ```
+
+<img width="403" height="433" alt="image" src="https://github.com/user-attachments/assets/4898217e-ce36-4995-a88d-4051c58c6640" />
 
 
 
