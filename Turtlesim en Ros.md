@@ -1,4 +1,4 @@
-### 🐢 Turtlesim en Ros2
+# 🐢 Turtlesim en Ros2
 
 # Paquete Turtlesim
 El paquete Turtlesim, es una herramienta que presenta una simulación gráfica en un entorno virtual, con el objetivo de poder simular el movimiento y el comportamiento del robot tortuga. 
@@ -25,7 +25,7 @@ Para ejecutar nodos en Ros2
 ros2 run [Paquete] [Nodo]
 ```
 
-### Ejemplo
+# Ejemplo
 
 Para ejecutar el nodo turtlesim_node que se encuentra en el paquete turtlesim, se usa el siguiente comando:
 
@@ -106,14 +106,14 @@ angular:
 </p>
 
 
-Para conocer los nodos disponibles, se utiliza el siguiente comando:
+Para conocer los **nodos** disponibles, se utiliza el siguiente comando:
 
 ```bash
 ros2 node list
 > /turtlesim
 ```
 
-Para evidenciar los tópicos disponibles, se usa el comando:
+Para evidenciar los **tópicos** disponibles, se usa el comando:
 
 ```bash
 ros2 topic list 
@@ -124,7 +124,7 @@ ros2 topic list
   /turtle1/pose
 ```
 
-Para obtener la lista de servicios activos, se utiliza la instrucción:
+Para obtener la lista de **servicios** activos, se utiliza la instrucción:
 
 ```bash
 ros2 service list
@@ -143,7 +143,7 @@ ros2 service list
   /turtlesim/set_parameters_atomically
 ```
 
-También es posible evidenciar la lista de acciones disponibles en el ecosistema:
+También es posible evidenciar la lista de **acciones** disponibles en el ecosistema:
 
 ```bash
 ros2 action list 
