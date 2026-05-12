@@ -27,3 +27,21 @@ ros2 run [Paquete] [Nodo]
 
 ### Ejemplo
 
+Para ejecutar el nodo turtlesim_node que se encuentra en el paquete turtlesim, se usa el siguiente comando:
+
+```bash
+ros2 run turtlesim turtlesim_node 
+```
+El nodo turtlesim_node muestra una ventana de simulación del robot tortuga.
+
+<img width="407" height="431" alt="image" src="https://github.com/user-attachments/assets/68d04ae4-ff61-4850-9ba4-552346262e0b" />
+
+Para controlar el movimiento del robot tortuga se ejecuta la instrucción: 
+
+
+```bash
+ros2 run turtlesim turtle_teleop_key  
+```
+
+El nodo turtle_teleop_key, permite controlar el movimiento de la tortuga mediante el uso de las teclas del teclado.
+
