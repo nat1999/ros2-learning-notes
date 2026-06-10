@@ -2,8 +2,9 @@
 
 ## Pasos para crear un nodo en Ros2
 
-1. Se tiene el siguiente nodo en c++. El nombre del proyecto se llama test_node.cpp. 
+En ROS2, un nodo es un proceso encargado de ejecutar una tarea específica. Para que un nodo pueda intercambiar información con otros nodos, utiliza tópicos y tipos de mensajes. A continuación, se describe el procedimiento para crear y ejecutar un nodo publicador en C++.
 
+Se tiene el siguiente nodo en c++. El nombre del proyecto se llama test_node.cpp.
 
 ```bash
 #include <chrono>
@@ -47,8 +48,14 @@ int main(int argc, char * argv[])
 }
 ```
 
-2. Se verifica en el archivo package.xml, que las dependencias a utilizar sean las correctas. 
+1. Configuración de dependencias
+El archivo package.xml contiene la información del paquete y las dependencias necesarias para su compilación y ejecución. En este ejemplo, el paquete denominado robot_study utiliza las bibliotecas:
 
+- `rclcpp:` proporciona las funciones necesarias para desarrollar nodos en C++.
+- `std_msgs:` contiene tipos de mensajes básicos.
+- `geometry_msgs:` incluye mensajes para representar información geométrica.
+
+Por tanto, estas dependencias deben declararse dentro del archivo package.xml.
 
 ```bash
 <?xml version="1.0"?>
