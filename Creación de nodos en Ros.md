@@ -1,7 +1,8 @@
 # 🤖 Condiciones para los la creación de nodos en Ros2 con tópicos
 
 ## Pasos para crear un nodo en Ros2
-Se tiene el siguiente nodo en c++. El nombre del proyecto se llama test_node.cpp. 
+
+1. Se tiene el siguiente nodo en c++. El nombre del proyecto se llama test_node.cpp. 
 
 
 ```bash
@@ -46,7 +47,7 @@ int main(int argc, char * argv[])
 }
 ```
 
-Se verifica en el archivo package.xml, que las dependencias a utilizar sean las correctas. 
+2. Se verifica en el archivo package.xml, que las dependencias a utilizar sean las correctas. 
 
 
 ```bash
@@ -74,7 +75,7 @@ Se verifica en el archivo package.xml, que las dependencias a utilizar sean las 
 </package>
 ```
 
-En el archivo anterior, es posible evidenciar que el proyecto depende de los tipos de mensajes std_msgs y geometry_msgs. 
+3. En el archivo anterior, es posible evidenciar que el proyecto depende de los tipos de mensajes std_msgs y geometry_msgs. 
 Con el archivo CMakeLists.txt,  se utiliza para crear un ejecutable y establecer las dependencias para compilar el ejecutable. 
 
 
@@ -121,13 +122,13 @@ install(TARGETS
 ament_package()
 ```
 
-Luego, nos dirigimos al espacio de trabajo y realizamos la respectiva compilación de paquetes. 
+4. Luego, nos dirigimos al espacio de trabajo y realizamos la respectiva compilación de paquetes. 
 
 ```bash
 colcon build --symlink-install 
 ```
 
-Finalmente, se ejecuta el nodo. 
+5. Finalmente, se ejecuta el nodo. 
 
 ```bash
 ros2 run robot_study test_node
@@ -142,3 +143,6 @@ ros2 run robot_study test_node
 [INFO] [1687459305.961165848] [minimal_publisher]: Publishing: 'Hello, world! 7'
 [INFO] [1687459306.461144249] [minimal_publisher]: Publishing: 'Hello, world! 8'
 ```
+
+# 🤖 Ejemplo de nodo publicador y nodo suscriptor 
+
