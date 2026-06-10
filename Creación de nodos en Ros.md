@@ -48,12 +48,12 @@ int main(int argc, char * argv[])
 }
 ```
 
-1. Configuración de dependencias
+## 1. Configuración de dependencias: 
 El archivo package.xml contiene la información del paquete y las dependencias necesarias para su compilación y ejecución. En este ejemplo, el paquete denominado robot_study utiliza las bibliotecas:
 
-- `rclcpp:` proporciona las funciones necesarias para desarrollar nodos en C++.
-- `std_msgs:` contiene tipos de mensajes básicos.
-- `geometry_msgs:` incluye mensajes para representar información geométrica.
+- `rclcpp:` Proporciona las funciones necesarias para desarrollar nodos en C++.
+- `std_msgs:` Contiene tipos de mensajes básicos.
+- `geometry_msgs:` Incluye mensajes para representar información geométrica.
 
 Por tanto, estas dependencias deben declararse dentro del archivo package.xml.
 
