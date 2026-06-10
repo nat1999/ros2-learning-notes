@@ -88,25 +88,25 @@ El archivo CMakeLists.txt define el proceso de compilación del paquete.
 
 En primer lugar, se buscan las dependencias requeridas mediante las instrucciones:
 
-find_package(ament_cmake REQUIRED)
-find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)
-find_package(geometry_msgs REQUIRED)
+- find_package(ament_cmake REQUIRED)
+- find_package(rclcpp REQUIRED)
+- find_package(std_msgs REQUIRED)
+- find_package(geometry_msgs REQUIRED)
 
-Posteriormente, se crea un ejecutable denominado test_node, asociado al archivo fuente test_node.cpp:
+Posteriormente, se crea un ejecutable denominado **test_node**, asociado al archivo fuente **test_node.cpp**:
 
-add_executable(test_node src/test_node.cpp)
+**add_executable(test_node src/test_node.cpp)**
 
 Luego, se establecen las dependencias necesarias para la compilación del nodo:
 
-ament_target_dependencies(test_node rclcpp std_msgs)
+**ament_target_dependencies(test_node rclcpp std_msgs)**
 
 Finalmente, se indica la ubicación donde será instalado el ejecutable:
 
-install(TARGETS
+**install(TARGETS
    test_node
    DESTINATION lib/${PROJECT_NAME}
-)
+)**
 
 Ver archivo CMakeLists.txt: 
 
