@@ -146,3 +146,135 @@ ros2 run robot_study test_node
 
 # 🤖 Ejemplo de nodo publicador y nodo suscriptor 
 
+## Nodo publicador
+
+```bash
+//! NODO PUBLICADOR
+
+// Librerías para trabajar con medidas de tiempo
+#include <chrono>
+// Librería para desarrollar nodos en Ros2
+#include "rclcpp/rclcpp.hpp"
+// Librería donde se encuentra asociado el tipo de mensaje String
+#include "std_msgs/msg/string.hpp"
+
+//! Espacio de nombres: Es un mecanismos que agrupa variables, funciones y clases.
+
+//  Es un espacio de nombres(std) dentro de la librería chrono_literals.
+//  Si se tiene una funcion() dentro de un espacio de nombres,
+//  se puede acceder a la funcion() escribiendo namespace::funcion()
+
+using namespace std::chrono_literals;
+
+//  Se define una clase llamada MinimalPublisher que heredara los atributos y métodos de la
+//  clase rclcpp::Node
+//  rclcpp es el espacio de nombres, Node es la clase dentro de ese espacio de nombres.
+
+class MinimalPublisher : public rclcpp::Node
+{
+public:
+  // Las funciones son accesibles fuera de la clase
+  MinimalPublisher()
+      // Se inicializa la clase con el nombre "minimal_publisher" y la variable count en cero(0)
+      : Node("minimal_publisher"), count_(0)
+  {
+    // Crea el nodo publicador con el método //*create_publisher
+    // Se tiene en cuenta el tipo de mensaje asociado String
+    publisher_ = this->create_publisher<std_msgs::msg::String>("topic", 10);
+    // Crea un temporizador con el método // *create_wall_timer
+    timer_ = this->create_wall_timer(
+        // Se llama la función timer_callback cada 500ms
+        // sts::bind, se utiliza para enlazar la clase MinimalPublisher con la función timer_callback
+        500ms, std::bind(&MinimalPublisher::timer_callback, this));
+  }
+
+private:
+  // Establece los datos del mensaje y los mensajes que se publican
+  void timer_callback()
+  {
+    // Se crea un objeto del tipo String, es decir, que se reserva memoria para guardar datos
+    auto message = std_msgs::msg::String();
+    // Se construye la cadena de caracteres
+    message.data = "Hello, world! " + std::to_string(count_++);
+    // Se imprime en pantalla
+    RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
+    // Se publica el mensaje
+    publisher_->publish(message);
+  }
+  // Declarar variables temporizador, publicador y contador
+  rclcpp::TimerBase::SharedPtr timer_;
+  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
+  size_t count_;
+};
+
+//Función principal
+int main(int argc, char *argv[])
+{
+  // Incializa el entorno de Ros2
+  rclcpp::init(argc, argv);
+  // Gestiona la ejecución de suscriptores, publicadores y temporizadores en el nodo
+  rclcpp::spin(std::make_shared<MinimalPublisher>());
+  // Finaliza la ejecución del programa
+  rclcpp::shutdown();
+  return 0;
+}
+```
+
+## Nodo suscriptor
+
+```bash
+//! NODO SUSCRIPTOR
+
+#include <memory>
+
+// Librería para trabajar con medidas de tiempo
+#include <chrono>
+// Librería para trabajar con Ros2, permite desarrollar nodos en C++
+#include "rclcpp/rclcpp.hpp"
+// Librería que tiene asociado el tipo de mensaje String
+#include "std_msgs/msg/string.hpp"
+
+// Espacio de nombres dentro de la librería chrono_literals
+using namespace std::chrono_literals;
+// using std::placeholders::_1;
+
+// Se define una clase Subscriber
+// La clase Subscriber esta heredando los atributos y métodos de la clase Node
+class Subscriber : public rclcpp::Node
+{
+
+public:
+    // Las funciones son accesibles fuera de la clase
+    // Se inicializa la clase con el nombre "subscriber_node"
+    Subscriber(): Node("subscriber_node")
+    { // Se crea el nodo suscriptor con el mensaje asociado que se publicará en el tópico
+        // No hay temporizador, porque cada vez que se ejecuta el nodo suscriptor,
+        // Este accede a la función topic_callback, en donde se encuentran los mensajes a publicar
+        subscription = this->create_subscription<std_msgs::msg::String>(
+            "topic", 10, std::bind(&Subscriber::topic_callback, this,  std::placeholders::_1));
+    }
+
+private:
+    void topic_callback(const std_msgs::msg::String & msg)const
+    {
+        // Se crea un objeto del tipo String, es decir, que se reserva memoria para guardar datos
+        auto message = msg;
+        // Se imprime en pantalla
+        RCLCPP_INFO(this->get_logger(), "I heard: '%s'", message.data.c_str());
+    }
+    // Declaración de la suscripción
+    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription;
+};
+
+//Función principal
+int main(int argc, char *argv[])
+{
+    // Inicializa el entorno de ROs2
+    rclcpp::init(argc, argv);
+
+    // Gestiona la ejecución de suscriptores, publicadores y temporizadores en el nodo
+    rclcpp::spin(std::make_shared<Subscriber>());
+    // Finaliza la ejecución del programa
+    rclcpp::shutdown();
+}
+```
