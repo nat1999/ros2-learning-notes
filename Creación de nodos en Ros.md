@@ -278,3 +278,38 @@ int main(int argc, char *argv[])
     rclcpp::shutdown();
 }
 ```
+
+## Ejecutar nodo publicador y nodo suscriptor.
+
+## 1. Nodo publicador
+
+```bash
+ros2 run robot_study publisher 
+
+> [INFO] [1688496185.989231499] [minimal_publisher]: Publishing: 'Hello, world! 0'
+[INFO] [1688496186.489182372] [minimal_publisher]: Publishing: 'Hello, world! 1'
+[INFO] [1688496186.989209774] [minimal_publisher]: Publishing: 'Hello, world! 2'
+[INFO] [1688496187.489151294] [minimal_publisher]: Publishing: 'Hello, world! 3'
+[INFO] [1688496187.989131579] [minimal_publisher]: Publishing: 'Hello, world! 4'
+[INFO] [1688496188.489122373] [minimal_publisher]: Publishing: 'Hello, world! 5'
+[INFO] [1688496188.989081592] [minimal_publisher]: Publishing: 'Hello, world! 6'
+[INFO] [1688496189.489082208] [minimal_publisher]: Publishing: 'Hello, world! 7'
+[INFO] [1688496189.989023864] [minimal_publisher]: Publishing: 'Hello, world! 8'
+[INFO] [1688496190.489040028] [minimal_publisher]: Publishing: 'Hello, world! 9'
+[INFO] [1688496190.989007960] [minimal_publisher]: Publishing: 'Hello, world! 10'
+[INFO] [1688496191.488960461] [minimal_publisher]: Publishing: 'Hello, world! 11'
+[INFO] [1688496191.988964365] [minimal_publisher]
+```
+
+
+## 2. Nodo suscriptor 
+
+```bash
+ros2 run robot_study subscriber 
+
+>[INFO] [1688496190.489571526] [minimal_subscriber]: I heard: 'Hello, world! 9'
+[INFO] [1688496190.989241433] [minimal_subscriber]: I heard: 'Hello, world! 10'
+[INFO] [1688496191.489382910] [minimal_subscriber]: I heard: 'Hello, world! 11'
+[INFO] [1688496191.989334586] [minimal_subscriber]: I heard: 'Hello, world! 12'
+[INFO] [1688496192.489372118] [minimal_subscriber]: I heard: 'Hello, world! 13'
+```
