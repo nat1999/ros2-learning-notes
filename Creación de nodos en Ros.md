@@ -153,13 +153,24 @@ install(TARGETS
 ament_package()
 ```
 
-4. Luego, nos dirigimos al espacio de trabajo y realizamos la respectiva compilación de paquetes. 
+## 3. Compilación del paquete 
+Una vez configurados los archivos del paquete, se debe acceder al espacio de trabajo y ejecutar:
 
 ```bash
 colcon build --symlink-install 
 ```
+Este comando compila todos los paquetes presentes en el workspace y genera los archivos ejecutables correspondientes.
 
-5. Finalmente, se ejecuta el nodo. 
+## 4. Ejecución del nodo
+
+Después de la compilación, el nodo se ejecuta mediante:
+
+**ros2 run robot_study test_node**
+
+donde:
+
+- robot_study corresponde al nombre del paquete.
+- test_node es el nombre del ejecutable generado.
 
 ```bash
 ros2 run robot_study test_node
