@@ -95,18 +95,25 @@ En primer lugar, se buscan las dependencias requeridas mediante las instruccione
 
 Posteriormente, se crea un ejecutable denominado **test_node**, asociado al archivo fuente **test_node.cpp**:
 
-**add_executable(test_node src/test_node.cpp)**
+
+```bash
+add_executable(test_node src/test_node.cpp)
+```
 
 Luego, se establecen las dependencias necesarias para la compilación del nodo:
 
-**ament_target_dependencies(test_node rclcpp std_msgs)**
+```bash
+ament_target_dependencies(test_node rclcpp std_msgs)**
+```
 
 Finalmente, se indica la ubicación donde será instalado el ejecutable:
 
-**install(TARGETS
+```bash
+install(TARGETS
    test_node
    DESTINATION lib/${PROJECT_NAME}
-)**
+)
+```
 
 Ver archivo CMakeLists.txt: 
 
