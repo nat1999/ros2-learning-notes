@@ -24,7 +24,7 @@ sudo apt install ros-<distro>-<package>
 sudo apt install ros-humble-rqt
 ```
 
-### 🖥️ Visualizador de nodos y tópicos
+# 🖥️ Visualizador de nodos y tópicos
 Se ejecuta el nodo turtlesim_node que se encuentra en el paquete turtlesim:
 
 ```bash
@@ -37,7 +37,7 @@ ros2 run turtlesim turtlesim_node
 
 El nodo turtle_teleop_key que se encuentra ubicado en el paquete turtlesim. Este nodo, permite el movimiento y desplazamiento del robot en el entorno virtual. 
 
-### 🤖Acceso al rqt_graph
+# 🤖Acceso al rqt_graph
 Se accede a la herramienta rqt con la siguiente instrucción:
 
 ```bash
@@ -49,7 +49,7 @@ Tenemos el entorno de rqt_graph:
 <img width="473" height="381" alt="image" src="https://github.com/user-attachments/assets/59c3d880-e622-4204-8e6f-00a3e7a3e84c" />
 </p>
 
-### 🤖Servicio spawn en rqt
+# 🤖Servicio spawn en rqt
 
 <p align="center">
 <img width="474" height="380" alt="image" src="https://github.com/user-attachments/assets/8c726fa9-400e-490f-845a-8dade954c48b" />
