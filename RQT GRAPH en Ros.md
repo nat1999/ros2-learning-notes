@@ -30,6 +30,9 @@ Se ejecuta el nodo turtlesim_node que se encuentra en el paquete turtlesim:
 ```bash
 ros2 run turtlesim turtlesim_node
 ```
+
+<p align="center">
 <img width="467" height="509" alt="image" src="https://github.com/user-attachments/assets/1494e630-34f4-49a0-a378-bb4c73cdbeb7" />
+</p>
 
 El nodo turtle_teleop_key que se encuentra ubicado en el paquete turtlesim. Este nodo, permite el movimiento y desplazamiento del robot en el entorno virtual. 
