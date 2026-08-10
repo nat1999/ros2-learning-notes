@@ -49,3 +49,14 @@ Tenemos el entorno de rqt_graph:
 <img width="473" height="381" alt="image" src="https://github.com/user-attachments/assets/59c3d880-e622-4204-8e6f-00a3e7a3e84c" />
 </p>
 
+### Servicio spawn en rqt
+
+<p align="center">
+<img width="474" height="380" alt="image" src="https://github.com/user-attachments/assets/8c726fa9-400e-490f-845a-8dade954c48b" />
+</p>
+
+Es posible evidenciar parámetros. Estos permiten crear un nuevo robot tortuga llamado turtle2. Es posible cambiar las coordenadas X, Y y Theta. 
+
+<p align="center">
+<img width="474" height="377" alt="image" src="https://github.com/user-attachments/assets/c5b28303-f511-491e-8542-6e0bde12c38d" />
+</p>
