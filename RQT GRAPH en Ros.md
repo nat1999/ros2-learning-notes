@@ -36,3 +36,16 @@ ros2 run turtlesim turtlesim_node
 </p>
 
 El nodo turtle_teleop_key que se encuentra ubicado en el paquete turtlesim. Este nodo, permite el movimiento y desplazamiento del robot en el entorno virtual. 
+
+### Acceso al rqt_graph
+Se accede a la herramienta rqt con la siguiente instrucción:
+
+```bash
+rqt
+```
+Tenemos el entorno de rqt_graph:
+
+<p align="center">
+<img width="473" height="381" alt="image" src="https://github.com/user-attachments/assets/59c3d880-e622-4204-8e6f-00a3e7a3e84c" />
+</p>
+
