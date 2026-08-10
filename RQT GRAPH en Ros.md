@@ -24,7 +24,7 @@ sudo apt install ros-<distro>-<package>
 sudo apt install ros-humble-rqt
 ```
 
-### Visualizador de nodos y tópicos
+### 🖥️ Visualizador de nodos y tópicos
 Se ejecuta el nodo turtlesim_node que se encuentra en el paquete turtlesim:
 
 ```bash
@@ -37,7 +37,7 @@ ros2 run turtlesim turtlesim_node
 
 El nodo turtle_teleop_key que se encuentra ubicado en el paquete turtlesim. Este nodo, permite el movimiento y desplazamiento del robot en el entorno virtual. 
 
-### Acceso al rqt_graph
+### 🤖Acceso al rqt_graph
 Se accede a la herramienta rqt con la siguiente instrucción:
 
 ```bash
@@ -49,7 +49,7 @@ Tenemos el entorno de rqt_graph:
 <img width="473" height="381" alt="image" src="https://github.com/user-attachments/assets/59c3d880-e622-4204-8e6f-00a3e7a3e84c" />
 </p>
 
-### Servicio spawn en rqt
+### 🤖Servicio spawn en rqt
 
 <p align="center">
 <img width="474" height="380" alt="image" src="https://github.com/user-attachments/assets/8c726fa9-400e-490f-845a-8dade954c48b" />
@@ -59,4 +59,14 @@ Es posible evidenciar parámetros. Estos permiten crear un nuevo robot tortuga l
 
 <p align="center">
 <img width="474" height="377" alt="image" src="https://github.com/user-attachments/assets/c5b28303-f511-491e-8542-6e0bde12c38d" />
+</p>
+
+Para mover la tortuga, se utiliza la siguiente instrucción:
+
+```bash
+ros2 run turtlesim turtle_teleop_key  
+```
+
+<p align="center">
+<img width="393" height="429" alt="image" src="https://github.com/user-attachments/assets/9fd675fa-b1a4-44b0-a62e-9382294d1ba2" />
 </p>
