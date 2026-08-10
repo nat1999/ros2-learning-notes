@@ -17,8 +17,8 @@ sudo apt upgrade
 sudo apt install ros-<distro>-<package>
 ```
 
-<distro>: La distribución de Ros2 como por ejemplo: Fox y humble. 
-<package>: Es el nombre del paquete.
+1. <distro>: La distribución de Ros2 como por ejemplo: Fox y humble. 
+2. <package>: Es el nombre del paquete.
 
 ```bash
 sudo apt install ros-humble-rqt
