@@ -70,3 +70,39 @@ ros2 run turtlesim turtle_teleop_key
 <p align="center">
 <img width="393" height="429" alt="image" src="https://github.com/user-attachments/assets/9fd675fa-b1a4-44b0-a62e-9382294d1ba2" />
 </p>
+
+Si se quiere evidenciar la lista de tópicos asociados, se hace lo siguiente:
+
+```bash
+ ros2 topic list 
+ 
+> /parameter_events
+  /rosout
+  /turtle1/cmd_vel
+  /turtle1/color_sensor
+  /turtle1/pose
+  /turtle2/cmd_vel
+  /turtle2/color_sensor
+```
+
+# 🤖Servicio set_pen en rqt
+
+<p align="center">
+<img width="475" height="382" alt="image" src="https://github.com/user-attachments/assets/87a1de94-f566-4425-ab7b-61920384bb66" />
+</p>
+
+Con la imagen anterior, es posible visualizar los valores r,g y b, que establecen el color de línea o la ruta que dibuja el robot torturga. En este caso, se selecciona el color rojo.  
+
+
+<p align="center">
+<img width="464" height="475" alt="image" src="https://github.com/user-attachments/assets/562a500a-b2d4-4eb6-a2d9-2fa82ad81b50" />
+</p>
+
+# Remapping 
+
+El remapping es utilizado para cambiar los nombres de los tópicos o servicios y modificar los valores de los parámetros, sin tener que cambiar el código fuente de los nodos.
+Es usado para cambiar las conexiones de los tópicos entre los nodos. En este caso, las conexiones que se realizan en el tópico turtle1/cmd_vel, se conectarán al tópico  turtle2/cmd_vel.
+
+```bash
+ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=turtle2/cmd_vel
+```
